@@ -87,9 +87,7 @@ class Server {
 
             if($parts[1] == '001') {
                 Registry::getInstance()->setNickname($parts[2]);
-            }
 
-            if($parts[1] == '004') {
                 Event::dispatch('connect_finished', [
                     'line'      => $line,
                     'parts'     => $parts,
