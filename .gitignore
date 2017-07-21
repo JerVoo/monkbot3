@@ -1,0 +1,4 @@
+.idea/
+var/
+
+!var/db/__blank__.db
